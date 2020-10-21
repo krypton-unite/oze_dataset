@@ -18,7 +18,7 @@ setup(
     author_email='daniel@kryptonunite.com',
     keywords=['Dataset', 'Oze Dataset', 'Time Series'],
     url='https://github.com/krypton-unite/oze_dataset.git',
-    download_url='https://pypi.org/project/oze-dataset/0.0.2/',
+    download_url='https://pypi.org/project/oze-dataset/',
     install_requires = [
         'numpy',
         'pandas',

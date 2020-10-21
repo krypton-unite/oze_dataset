@@ -124,7 +124,7 @@ def _get_files_to_download(datasets_path, dataset_path):
     return files_to_download, make_npz_info
 
 # pylint: disable=too-many-locals
-def npz_check(datasets_path, output_filename, credentials=None):
+def npz_check(datasets_path=Path('datasets'), output_filename='dataset', credentials=None):
     """
     make sure npz is present
     """
@@ -191,7 +191,7 @@ def npz_check(datasets_path, output_filename, credentials=None):
 
 
     loaded_npz = np.load(dataset_path)
-    assert(loaded_npz.files == ['R', 'X', 'Z'])
+    (loaded_npz.files == ['R', 'X', 'Z'])
     return dataset_path
 
 def make_npz(datasets_path, output_filename, x_train_filename, y_train_filename):
