@@ -30,6 +30,7 @@ setup(
         'test': [
             'pytest',
             'python-dotenv',
+            'pytest-cov'
         ],
         'dev': [
             'bumpversion',
