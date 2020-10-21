@@ -17,8 +17,8 @@ setup(
     author='Daniel Kaminski de Souza',
     author_email='daniel@kryptonunite.com',
     keywords=['Dataset', 'Oze Dataset', 'Time Series'],
-    url='',
-    download_url='',
+    url='https://github.com/krypton-unite/oze_dataset.git',
+    download_url='https://pypi.org/project/oze-dataset/0.0.2/',
     install_requires = [
         'numpy',
         'pandas',
@@ -32,7 +32,9 @@ setup(
             'python-dotenv',
         ],
         'dev': [
-            'bumpversion'
+            'bumpversion',
+            'twine',
+            'wheel'
         ]
     }
 )
