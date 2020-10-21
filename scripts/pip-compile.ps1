@@ -1,0 +1,1 @@
+pip-compile setup.py --upgrade --generate-hashes --output-file=requirements-lock.txt
