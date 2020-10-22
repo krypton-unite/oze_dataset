@@ -8,7 +8,7 @@ with open('HISTORY.md') as history_file:
 
 setup(
     name='oze_dataset',
-    version='0.0.6',
+    version='0.0.7',
     description='Downloads oze dataset and creates npz file.',
     long_description_content_type="text/markdown",
     long_description=README + '\n\n' + HISTORY,
