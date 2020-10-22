@@ -15,7 +15,7 @@ import numpy as np
 import pandas as pd
 import torch
 from time_series_dataset import TimeSeriesDataset
-from oze_dataset import labels
+from oze_dataset.labels import labels
 from torch.utils.data import Dataset
 
 TIME_SERIES_LENGTH = 672
@@ -162,7 +162,6 @@ class OzeNPZDataset(TimeSeriesDataset):
 
     # pylint: disable=arguments-differ
     def make_future_dataframe(self, *args, include_history=True, **kwargs):
-        print(Path(self.dataset_path.parent, 'x_test_QK7dVsy.csv'))
         dataset_eval = OzeEvaluationDataset(
             Path(self.dataset_path.parent, 'x_test_QK7dVsy.csv'),
             TIME_SERIES_LENGTH, given_labels=labels)

@@ -35,3 +35,5 @@ def test_OzeNPZDataset(user_name, user_password):
     }
     ond = OzeNPZDataset(npz_check(credentials=credentials))
     assert ond.get_x_shape() == (7500, 672, 37)
+    fd = ond.make_future_dataframe()
+    assert fd.shape == (8000, 672, 37)
