@@ -14,8 +14,7 @@ import requests
 from lxml import html
 from tqdm import tqdm
 
-TIME_SERIES_LENGTH = 672
-
+from .dataset import TIME_SERIES_LENGTH
 
 def download_from_url(session_requests, url, destination_folder):
     """
