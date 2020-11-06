@@ -49,6 +49,7 @@ def download_from_url(session_requests, url, destination_folder):
     pbar = tqdm(
         total=download_details['size'],
         initial=first_byte,
+        unit_divisor=1024,
         unit='B',
         unit_scale=True,
         desc=download_details['name'])

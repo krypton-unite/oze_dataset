@@ -83,9 +83,9 @@ class OzeEvaluationDataset(Dataset):
         # Store R and Z as x_train
         self.x = np.concatenate([Z, R], axis=-1)
         # Normalize
-        self.M = np.max(self.x, axis=(0, 1))
-        self.m = np.min(self.x, axis=(0, 1))
-        self.x = (self.x - self.m) / (self.M - self.m + np.finfo(float).eps)
+        # self.M = np.max(self.x, axis=(0, 1))
+        # self.m = np.min(self.x, axis=(0, 1))
+        # self.x = (self.x - self.m) / (self.M - self.m + np.finfo(float).eps)
 
     def __getitem__(self, idx):
         if torch.is_tensor(idx):
