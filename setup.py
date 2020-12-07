@@ -20,8 +20,7 @@ setup(
     url='https://github.com/krypton-unite/oze_dataset.git',
     download_url='https://pypi.org/project/oze-dataset/',
     install_requires = [
-        'time-series-dataset', 
-        'numpy',
+        'time-series-dataset',
         'pandas',
         'lxml',
         'requests',
